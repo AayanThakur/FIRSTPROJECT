@@ -1,0 +1,114 @@
+ 
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 10px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: yellow;
+
+        }
+
+        .container {
+
+            height: 650px;
+            width: 600px;
+            border: 2px solid black;
+            display: flex;
+            gap: 35px;
+            padding: 20px 20px 30px 35px;
+            background-color: lightgray;
+            flex-wrap: wrap;
+
+
+        }
+
+
+        .image {
+            margin-top: 45px;
+            height: 300px;
+            width: 215px;
+            padding-left: 10px;
+
+        }
+
+        .hobby {
+
+            height: 250px;
+            width: 220px;
+            border: 2px solid black;
+            color: navy;
+            margin-top: 95px;
+            background-color: bisque;
+            font-size: 18px;
+
+        }
+
+        .info {
+
+            height: 170px;
+            width: 100%;
+            border: 2px solid black;
+            padding: 20px;
+            font-size: 18px;
+            background-color: paleturquoise;
+            color: darkmagenta;
+
+        }
+
+
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 35px;
+            margin: 10px;
+        }
+
+        li:nth-child(1)::before {
+            background-image: url("cric.jpg");
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 22px;
+            height: 22px;
+            background-size: cover;
+
+        }
+
+        li:nth-child(2)::before {
+
+
+            content: "●";
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 22%;
+            height: 22px;
+            background-size: cover;
+
+        }
+
+        li:nth-child(3)::before {
+
+            background-image: url("wd.jpg");
+
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 32px;
+            height: 30px;
+            background-size: cover;
+
+        }
+    
